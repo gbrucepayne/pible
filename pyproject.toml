@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pible"
+version = "0.1.0"
+description = "A BLE connection manager for Raspberry Pi"
+authors = ["gbrucepayne <gbrucepayne@hotmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pybluez = {git = "https://github.com/pybluez/pybluez", rev = "0.23"}
+bleak = "^0.19.4"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.15.5"
+pytest = "^7.2.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
